@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>경우의 수 총정리</title>
+    <style>
+        body {
+            background-color: #ccffcc; /* 연두색 배경 */
+            font-family: 'Arial', sans-serif;
+            padding: 40px;
+            line-height: 1.7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #004400;
+            margin-top: 30px;
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #003300;
+            margin-left: 20px;
+        }
+
+        .box {
+            background-color: #eaffea;
+            padding: 15px;
+            border-left: 6px solid #66cc66;
+            margin: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .example {
+            background-color: #ffffe0;
+            padding: 15px;
+            border-left: 6px solid #ffcc00;
+            margin: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .explanation {
+            background-color: #fff8dc;
+            padding: 15px;
+            border-left: 6px solid #ffa500;
+            margin: 10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>경우의 수 총정리</h1>
+
+    <h2>1. 합의 법칙과 곱의 법칙</h2>
+
+    <div class="box">
+        <h3>합의 법칙</h3>
+        <p>
+            사건 A가 일어날 경우의 수가 <strong>m</strong>, 사건 B가 일어날 경우의 수가 <strong>n</strong>이라면,<br>
+            두 사건 A, B가 동시에 일어나지 않을 때 사건 A 또는 사건 B가 일어날 경우의 수는 <strong>m + n</strong>이다.
+        </p>
+    </div>
+
+    <div class="box">
+        <h3>곱의 법칙</h3>
+        <p>
+            사건 A가 일어날 경우의 수가 <strong>m</strong>, 사건 B가 일어날 경우의 수가 <strong>n</strong>이라면,<br>
+            두 사건 A, B가 동시에 일어날 경우의 수는 <strong>m × n</strong>이다.
+        </p>
+    </div>
+
+    <h2>2. 순열</h2>
+
+    <div class="box">
+        <p>간단하게 생각해서 <strong>순서대로 뽑아서 줄을 세우는 것</strong>을 순열이라고 한다.</p>
+    </div>
+
+    <div class="example">
+        <h3>[예시 문제]</h3>
+        <p>
+            1부터 5까지 적힌 카드가 한 장씩 있다.<br>
+            이 중 <strong>세 장</strong>을 뽑아서 <strong>세 자리 숫자</strong>를 만드는 방법의 경우의 수는?
+        </p>
+    </div>
+
+    <div class="explanation">
+        <h3>해설</h3>
+        <ol>
+            <li>백의 자리 카드를 뽑는 경우는 1~5 중 한 장을 뽑는 것이므로 <strong>5가지</strong>이다.</li>
+            <li>십의 자리 카드를 뽑는 경우는 백의 자리 숫자 카드를 제외한 <strong>4가지</strong>이다.</li>
+            <li>일의 자리 카드를 뽑는 경우는 앞의 두 장을 제외한 <strong>3가지</strong>이다.</li>
+        </ol>
+    </div>
+
+    <h2>3. 조합</h2>
+
+    <div class="box">
+        <p>서로 다른 <strong>n개</strong>에서 <strong>r개</strong>를 뽑는 것을 <strong>조합</strong>이라고 한다.</p>
+    </div>
+</body>
+</html>
